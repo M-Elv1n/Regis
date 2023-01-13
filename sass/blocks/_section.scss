@@ -1,0 +1,12 @@
+.img{
+    @include d-flex(row, 0 ,center, 0, 10px);
+    img{
+        width: 500px;
+    }
+    &__one{
+        @include d-flex(column);
+    }
+    &__two{
+        @include d-flex(column);
+    }
+}

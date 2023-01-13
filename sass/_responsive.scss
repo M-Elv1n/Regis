@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1199px) {
+    .container {
+        width: 900px;
+    }
+
+    .img {
+        @include d-flex(column, space-between);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 700px;
+    }
+
+    .header {
+        &__container {
+            display: none;
+            padding: 0 20px;
+            img {
+                display: block;
+            }
+        }
+        &__mob{
+            padding: 40px 20px 0 20px;
+            @include d-flex(row, space-between);
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+    .img{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 300px;
+    }
+    .header{
+        &__mob{
+            width: 300px;
+            margin: auto;
+            padding: 30px 0 0 0;
+        }
+    }
+}
